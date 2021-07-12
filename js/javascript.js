@@ -52,29 +52,22 @@ document.getElementById("navPortafolio").addEventListener("click",function(){
   document.getElementById("seeSistem1").addEventListener("click",function(){
     document.getElementById("modal-carousel").classList.add('modal-carousel-activo');
     document.getElementById("modal").setAttribute("style", "display:block;");
-    document.getElementById("prev").style.display = "block";
-    document.getElementById("next").style.display = "block";
   })
 
   document.getElementById("seeSistem2").addEventListener("click",function(){
     document.getElementById("modal-carousel2").classList.add('modal-carousel2-activo');
     document.getElementById("modal").setAttribute("style", "display:block;");
-    document.getElementById("prev2").style.display = "block";
-    document.getElementById("next2").style.display = "block";
   })
 
   document.getElementById("modal").addEventListener("click",function(e){
     document.getElementById("modal-carousel").classList.remove("modal-carousel-activo");
     document.getElementById("modal-carousel2").classList.remove("modal-carousel2-activo");
     document.getElementById("modal").setAttribute("style", "visibility:hidden;")
-    document.getElementById("prev").style.display = "none";
-    document.getElementById("next").style.display = "none";
-    document.getElementById("prev2").style.display = "none";
-    document.getElementById("next2").style.display = "none";
   });
 
+  //Validacion Formulario//
   const  input = document.querySelectorAll("#contacto input");
-  const textarea = document.getElementById('mensaje');
+  const textarea = document.getElementById('message');
   textarea.addEventListener("keyup",validarFormulario);
   textarea.addEventListener("blur", validarFormulario);
   input.forEach(element => {
@@ -90,8 +83,8 @@ document.getElementById("navPortafolio").addEventListener("click",function(){
 
   const campos = {
     email: false,
-    nombre: false,
-    mensaje: false
+    name: false,
+    message: false
   }
 
   function validarFormulario(e){
@@ -99,10 +92,10 @@ document.getElementById("navPortafolio").addEventListener("click",function(){
       case "email":
         validarCampos(e.target.value, expresiones.correo, e.target.name);
         break;
-      case "nombre":
+      case "name":
         validarCampos(e.target.value, expresiones.nombre, e.target.name);
         break;
-      case "mensaje":
+      case "message":
         validarCampos(e.target.value, expresiones.usuario, e.target.name);
         break;
     } 
@@ -121,19 +114,19 @@ document.getElementById("navPortafolio").addEventListener("click",function(){
 
   document.getElementById("enviar").addEventListener("click", function(e){
     e.preventDefault();
-      if(campos.nombre && campos.email && campos.mensaje){
+      if(campos.name && campos.email && campos.message){
         setTimeout(function() {
           document.getElementById("email").value = "";
-          document.getElementById("nombre").value = "";
-          document.getElementById("mensaje").value = "";
+          document.getElementById("name").value = "";
+          document.getElementById("message").value = "";
           document.getElementById("email").classList.remove("is-valid");
-          document.getElementById("nombre").classList.remove("is-valid");
-          document.getElementById("mensaje").classList.remove("is-valid");
+          document.getElementById("name").classList.remove("is-valid");
+          document.getElementById("message").classList.remove("is-valid");
           document.getElementById("alert-danger").classList.remove("d-block");
           document.getElementById("alert-primary").classList.add("d-block"); 
           campos.email = false;
-          campos.nombre = false;
-          campos.mensaje = false;
+          campos.name = false;
+          campos.message = false;
           }, 500);
 
         setTimeout(function(){
