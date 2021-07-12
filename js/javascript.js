@@ -112,8 +112,8 @@ document.getElementById("navPortafolio").addEventListener("click",function(){
     }
   }
 
-  document.getElementById("enviar").addEventListener("click", function(e){
-    //e.preventDefault();
+  /*document.getElementById("enviar").addEventListener("click", function(e){
+    e.preventDefault();
       if(campos.name && campos.email && campos.message){
         setTimeout(function() {
           document.getElementById("email").value = "";
@@ -141,5 +141,5 @@ document.getElementById("navPortafolio").addEventListener("click",function(){
           document.getElementById("alert-danger").classList.remove("d-block");
         },1000) 
       }
-  });
+  });*/
 });
