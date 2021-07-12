@@ -168,24 +168,23 @@ transform:scale(1.1)
 }
 .modal-carousel{
     position: fixed;
-    top: 45%;
+    top: 43%;
     left: 15%;
-    width: 70%;
+    width: 58%;
     transform: translateY(-50%);
     z-index: 11;
     display: none;
 }
 
 .modal-carousel-activo{
-    /*visibility:visible;*/
     display: block;
     
 }
 .modal-carousel2{
     position: fixed;
-    top: 45%;
+    top: 43%;
     left: 15%;
-    width: 70%;
+    width: 58%;
     transform: translateY(-50%);
     z-index: 11;
     display: none;
