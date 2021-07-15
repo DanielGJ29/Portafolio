@@ -246,7 +246,7 @@ transform:scale(1.1)
 }
 .carousel-caption{
     width: 100%;
-    height: 75px;
+    height: 60px;
     left: 0;
     bottom: 0;
     background-color: #17a2b8;
@@ -259,8 +259,8 @@ transform:scale(1.1)
     padding-top: 0;
    
 }
-.carousel-caption h3{
-
+.carousel-indicators li{
+    display: none!important;
 }
 .carousel-caption p{
     line-height: 1;
@@ -268,9 +268,19 @@ transform:scale(1.1)
 @media (min-width: 768px) {
     .carousel-caption{
         width: 100%;
+        height: 80px;
         left: 0;
         bottom: 0;
         background-color: #17a2b8;
+    }
+    .carousel-caption h3{
+        font-size: 1rem;
+    }
+    .carousel-caption p,h3{
+        font-size: 0.9rem;
+    }
+    .carousel-indicators li{
+        display: block!important;
     }
 }
 
