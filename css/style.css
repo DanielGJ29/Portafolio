@@ -261,7 +261,9 @@ transform:scale(1.1)
     padding-top: 0;
    
 }
-
+.carousel-indicators li{
+    display: none!important;
+}
 .carousel-caption p{
     line-height: 1;
 }
@@ -278,6 +280,9 @@ transform:scale(1.1)
     }
     .carousel-caption p,h3{
         font-size: 0.9rem;
+    }
+    .carousel-indicators li{
+        display: block!important;
     }
   
 }
