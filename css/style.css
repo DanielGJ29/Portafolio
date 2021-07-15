@@ -249,19 +249,19 @@ transform:scale(1.1)
     height: 60px;
     left: 0;
     bottom: 0;
-    background-color: #17a2b8;
+    /*background-color: #17a2b8;*/
     display: block!important;
     padding-top: 0.2rem;
+    position: relative;
 }
+
 .carousel-caption p,h3{
     font-size: 0.6rem;
     margin-top: 0;
     padding-top: 0;
    
 }
-.carousel-indicators li{
-    display: none!important;
-}
+
 .carousel-caption p{
     line-height: 1;
 }
@@ -271,7 +271,7 @@ transform:scale(1.1)
         height: 80px;
         left: 0;
         bottom: 0;
-        background-color: #17a2b8;
+        
     }
     .carousel-caption h3{
         font-size: 1rem;
@@ -279,9 +279,7 @@ transform:scale(1.1)
     .carousel-caption p,h3{
         font-size: 0.9rem;
     }
-    .carousel-indicators li{
-        display: block!important;
-    }
+  
 }
 
 
