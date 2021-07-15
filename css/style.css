@@ -1,6 +1,16 @@
-/*body{
-    font-family: 'Lato', sans-serif;
-}*/
+body{
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, rgb(236, 233, 233) 0%, rgb(255, 255, 255) 100%);
+}
+h1{
+    font-size: 1.6rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1rem;
+}
 
 .banner{
     
@@ -12,7 +22,7 @@
 }
 .banner:before{
     content: "";
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+    background-color: rgba(0,0,0,0.6);
     height: 70vh;
     width: 100%;
     position: absolute;
@@ -43,13 +53,17 @@
     backdrop-filter: blur(50px);
     border-radius: 0.8rem;
 }
+.banner-text p{
+   font-size: 1.5rem!important;
+   font-weight: 600;
+}
 .banner-foto{
     width: 200px;
     height: 200px;
     background-image: url("../img/yo.jpg");
     background-position: center center;
     background-size: cover; 
-    border-radius: 10rem;
+    border-radius: 50%;
 }
 .banner-foto img{
     width: 100%;
@@ -82,8 +96,12 @@
 .nav-link{
     font-size: 1.1rem;
 }
-.about{
-    background-color: rgba(245, 243, 243, 0.5);
+
+/*About*/
+
+.about-me{
+    line-height: 1.8;
+    font-size: 1.3rem;
 }
 .about a{
 width: 170px;
@@ -93,10 +111,22 @@ width: 170px;
     font-size: 22px;
     margin-right: 10px;
 }
+.skill-img{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
 .skill img{
  width: 100%;
  height: 100%;
  transition: 0.3s;
+}
+.skill-img .boostrap{
+    width: 70px;
+    height: 70px;
+    margin-left: 0.6rem;
+
 }
 .skill img:hover{
 -webkit-box-shadow: 4px 10px 13px 1px rgba(0,0,0,0.75);
@@ -104,15 +134,14 @@ width: 170px;
 box-shadow: 4px 10px 13px 1px rgba(0,0,0,0.75);
 transform:scale(1.1)
 }
-.skill-img{
-    width: 100px;
-    height: 100px;
-    margin: auto;
+.hobbies{
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 100%;
 }
 
-.portafolio{
-    background: rgba(255, 255, 255, 0.8);
-}
+/*Portafolio*/
+
 .portafolio-item{
    height: 380px;
 }
@@ -236,11 +265,8 @@ transform:scale(1.1)
     height: 1.5rem;
     margin-right: 10px;
 }
+/*Contacto*/
 
-.contact{
-    background: rgba(245, 243, 243, 0.5);
-    
-}
 .btn-enviar button{
     width: 150px;
 }
@@ -266,7 +292,7 @@ transform:scale(1.1)
 } 
 .email i:hover{
     transition: 0.3s;
-    color: darkblue;
+    color: #17a2b8;
 }
 .fb i:hover{
     transition: 0.3s;
@@ -276,4 +302,7 @@ transform:scale(1.1)
 .linkedin i:hover{
     transition: 0.3s;
     color: #17a2b8;
+}
+.github i:hover{
+    color: #959a9b;
 }
